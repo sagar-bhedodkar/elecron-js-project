@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <title>Hello from Electron renderer!</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-lg-4 col-md-3"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/logo1.png" alt="Logo">
+                </a>
+            </div>
+            <!-- <form class="form" role="form" name="loginform" id="login-form" method="post"> -->
+            <div class="row loginbox">
+                <div class="col-lg-12">
+                    <span class="singtext">Sign in </span>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <input type="text" class="form-control" id="username" name="username" size="20" tabindex="1"
+                        placeholder="User name">
+                </div>
+                <div class="col-lg-12  col-md-12 col-sm-12">
+                    <input type="password" class="form-control" id="password" name="password" tabindex="2"
+                        placeholder="Password">
+                </div>
+
+                <div class="col-lg-12  col-md-12 col-sm-12">
+                    <div id="showmsg-login"></div>
+                </div>
+                <div class="col-lg-12  col-md-12 col-sm-12">
+                    <input type="button" id="login_button" class="btn submitButton btn-sm" value="LOGIN" tabindex="4">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12  col-md-12 col-sm-12">
+            <footer class="footer">
+                <br> <br>
+                <p>© 2016 Atreya Innovations Pvt. Ltd. All rights reserved </p>
+            </footer>
+            <!--footer Section ends-->
+        </div>
+        <div class="col-lg-4 col-md-3"></div>
+    </div>
+    <!-- Add this line at the end of your HTML file, before the closing </body> tag -->
+    <script src="./renderer.js"></script>
+
+</body>
+
+</html>
